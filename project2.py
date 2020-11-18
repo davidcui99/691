@@ -59,3 +59,4 @@ def dbStructure(h1,h2,option):
 
 # 3
 
+print()
