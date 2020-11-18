@@ -60,6 +60,6 @@ def dbStructure(h1,h2,option):
 
 def es(dataset):
     fit1 = SimpleExpSmoothing(dataset).fit(smoothing_level=0.2, optimized=False)
-    print(fit1)
+    print(fit1.forecast())
 
-es([1,2,3,4,5])
+es([1,2,38,4,5])
