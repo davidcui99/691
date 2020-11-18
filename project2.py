@@ -1,7 +1,6 @@
 import pandas as pd
 from project1 import *
-
-
+from statsmodels.tsa.api import SimpleExpSmoothing
 
 # part 1
 
@@ -59,3 +58,8 @@ def dbStructure(h1,h2,option):
 
 # 3
 
+def es(dataset):
+    fit1 = SimpleExpSmoothing(dataset).fit(smoothing_level=0.2, optimized=False)
+    print(fit1)
+
+es([1,2,3,4,5])
